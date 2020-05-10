@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TAMZ 1 Template with local files
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/onsenui.css">
+    <link rel="stylesheet" href="css/onsen-css-components.min.css">
+    <script src="js/onsenui.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        // Code placed here
+    </script>
+</head>
+
+<body>
+    <ons-navigator swipeable id="myNavigator" page="page1_html"></ons-navigator>
+    <template id="page1_html">
+        <ons-page id="page1">
+            <div class="container">
+                <div id='date-time'
+                    style="margin: auto; width: 30%;border: thin solid grey; border-radius: 15px; padding: 10px;">
+                </div>
+            </div>
+            <div class="container col" id="location"
+                style="margin: auto; width:50%; padding: 10px; text-align: center;">
+                <div id="left1" style="text-align: left;"></div>
+                <div id="right" style="text-align: right;"></div>
+                <div id="left2" style="text-align: left;"></div>
+                <div class="row">
+                    <div class="col-6" id="altitude" style="text-align: left; float: left; margin-top: 15px;"></div>
+                    <div class="col-6" id="altitudeAcc" style="text-align: right; float: right; margin-top: 15px;">
+                    </div>
+                </div>
+                <div id="heading" style="text-align: left; margin-top: 50px;"></div>
+                <button id="btnCompass" class="button"
+                    style="border-radius: 50%; width: 150px; height: 150px; background-color: white; border:thin solid #0000FF; margin-top: 50px; color: black;">
+                    Compass
+                </button>
+                <div id="aleft1" style="text-align: left;"></div>
+                <div id="aleft2" style="text-align: left;"></div>
+                <div id="aleft3" style="text-align: left;"></div>
+                <div id="aleft4" style="text-align: left;"></div>
+            </div>
+        </ons-page>
+    </template>
+    <template id="page2_html">
+        <ons-page id="page2">
+            <div class="container">
+                <label for="fname">Latitude:</label>
+                <input type="text" id="iLatitude" name="fname"><br><br>
+                <label for="fname">Longitude:</label>
+                <input type="text" id="iLongitude" name="fname"><br><br>
+                <button id="buttonCalculate" class="button"> Submit </button>
+            </div>
+        </ons-page>
+    </template>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
